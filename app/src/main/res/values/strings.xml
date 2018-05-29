@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="Q1">(1) Who was fined $20 for speeding with his horse and carriage?</string>
+    <string name="Q2">(2) The youngest person to ever be elected as President?</string>
+    <string name="Q3">(3) Which President had polio?</string>
+    <string name="Q4">(4) Who had teeth made out of elephant and walrus tusk?</string>
+    <string name="name">Name</string>
+    <string name="ulysses_s_grant">Ulysses S. Grant</string>
+    <string name="abraham_lincoln">Abraham Lincoln</string>
+    <string name="donald_trump">Donald Trump</string>
+    <string name="james_buchanan">James Buchanan</string>
+    <string name="george_washington">George Washington</string>
+    <string name="theodore_roosevelt">Theodore Roosevelt</string>
+    <string name="john_f_kennedy">John F. Kennedy</string>
+    <string name="barack_obama">Barack Obama</string>
+    <string name="benjamin_roosevelt">Benjamin Roosevelt</string>
+    <string name="franklin_d_roosevelt">Franklin D. Roosevelt</string>
+    <string name="harry_roosevelt">Harry Roosevelt</string>
+    <string name="william_h_taft">William H. Taft</string>
+    <string name="sheev_palpatine">Sheev Palpatine</string>
+    <string name="gerald_r_ford">Gerald R. Ford</string>
+    <string name="ready_to_submit">Ready to submit?</string>
+    <string name="submit">submit</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="summary">SUMMARY</string>
+    <string name="Q5">(5) Which presidents had a vice president whose last name is \'Johnson\'?</string>
+</resources>

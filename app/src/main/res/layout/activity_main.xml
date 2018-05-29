@@ -1,0 +1,291 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/firstImage"
+            style="@style/SealOfThePresident" />
+        <ImageView
+            android:id="@+id/secondImage"
+            android:layout_below="@id/firstImage"
+            style="@style/SealOfThePresident" />
+        <ImageView
+            android:id="@+id/thirdImage"
+            android:layout_below="@id/secondImage"
+            style="@style/SealOfThePresident" />
+        <ImageView
+            android:id="@+id/fourthImage"
+            android:layout_below="@id/thirdImage"
+            style="@style/SealOfThePresident" />
+
+        <LinearLayout
+            android:id="@+id/aboveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/name"
+                android:textStyle="italic"
+                android:textColor="?android:attr/colorPressedHighlight"
+                android:textColorHint="?android:attr/colorPressedHighlight" />
+
+            <TextView
+                android:text="@string/Q1"
+                style="@style/QuestionsFormat" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                style="@style/MultipleChoice">
+
+                <RadioButton
+                    android:id="@+id/firstQuestionChoiceA"
+                    android:text="@string/ulysses_s_grant"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/firstQuestionChoiceB"
+                    android:text="@string/abraham_lincoln"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/firstQuestionChoiceC"
+                    android:text="@string/donald_trump"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/firstQuestionChoiceD"
+                    android:text="@string/james_buchanan"
+                    style="@style/MultipleChoiceOptions" />
+            </RadioGroup>
+
+            <TextView
+                android:text="@string/Q2"
+                style="@style/QuestionsFormat"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                style="@style/MultipleChoice">
+
+                <RadioButton
+                    android:id="@+id/secondQuestionChoiceA"
+                    android:text="@string/george_washington"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/secondQuestionChoiceB"
+                    android:text="@string/theodore_roosevelt"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/secondQuestionChoiceC"
+                    android:text="@string/john_f_kennedy"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/secondQuestionChoiceD"
+                    android:text="@string/barack_obama"
+                    style="@style/MultipleChoiceOptions" />
+            </RadioGroup>
+
+            <TextView
+                android:text="@string/Q3"
+                style="@style/QuestionsFormat"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                style="@style/MultipleChoice">
+
+                <RadioButton
+                    android:id="@+id/thirdQuestionChoiceA"
+                    android:text="@string/theodore_roosevelt"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/thirdQuestionChoiceB"
+                    android:text="@string/benjamin_roosevelt"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/thirdQuestionChoiceC"
+                    android:text="@string/franklin_d_roosevelt"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/thirdQuestionChoiceD"
+                    android:text="@string/harry_roosevelt"
+                    style="@style/MultipleChoiceOptions" />
+            </RadioGroup>
+
+            <TextView
+                android:text="@string/Q4"
+                style="@style/QuestionsFormat" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                style="@style/MultipleChoice">
+
+                <RadioButton
+                    android:id="@+id/fourthQuestionChoiceA"
+                    android:text="@string/george_washington"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/fourthQuestionChoiceB"
+                    android:text="@string/william_h_taft"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/fourthQuestionChoiceC"
+                    android:text="@string/sheev_palpatine"
+                    style="@style/MultipleChoiceOptions" />
+
+                <RadioButton
+                    android:id="@+id/fourthQuestionChoiceD"
+                    android:text="@string/gerald_r_ford"
+                    style="@style/MultipleChoiceOptions" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:text="@string/Q5"
+                    style="@style/QuestionsFormat"
+                    android:layout_marginBottom="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/listOne"
+                    android:text="John Adams"
+                    style="@style/ListOptions" />
+
+                <CheckBox
+                    android:id="@+id/listTwo"
+                    android:text="Richard Nixon "
+                    style="@style/ListOptions"/>
+
+                <CheckBox
+                    android:id="@+id/listThree"
+                    android:text="Jimmy Carter"
+                    style="@style/ListOptions" />
+
+                <CheckBox
+                    android:id="@+id/listFour"
+                    android:text="@string/john_f_kennedy"
+                    style="@style/ListOptions"/>
+
+                <CheckBox
+                    android:id="@+id/listFive"
+                    android:text="@string/abraham_lincoln"
+                    style="@style/ListOptions" />
+
+                <CheckBox
+                    android:id="@+id/listSix"
+                    android:text="Lyndon Johnson"
+                    style="@style/ListOptions"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:text="(6) The mastermind of the Louisiana Purchase is 1) William Henry Harrison or 2) Thomas Jefferson"
+                    style="@style/QuestionsFormat" />
+
+                <EditText
+                    android:id="@+id/enterTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="Enter your answer here..."
+                    android:textStyle="italic"
+                    android:textColor="?android:attr/colorPressedHighlight"
+                    android:textColorHint="?android:attr/colorPressedHighlight" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/ready_to_submit"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/yesID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@android:color/white"/>
+
+                <CheckBox
+                    android:id="@+id/noID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitButt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:onClick="submitQuiz"
+                android:text="@string/submit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/aboveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:text="@string/summary"
+                android:textSize="24sp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
